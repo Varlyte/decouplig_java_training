@@ -7,6 +7,6 @@ public class LoggerFactory implements Logger{
     }
 
     public static Logger getLogger(String name){
-        return getLogger(name);
+        return new ConsoleLogger();
     }
 }

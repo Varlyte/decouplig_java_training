@@ -21,13 +21,13 @@ public class Simulation {
 
     private boolean nextRound() {
         if(player.askNextGuess() > numberToGuess){
-            logger.log("It's less !");
+            logger.log("It's lower !");
         }
         else if(player.askNextGuess() < numberToGuess){
-            logger.log("It's more !");
+            logger.log("It's greated !");
         }
         else {
-            logger.log("Good guess !");
+            logger.log("Good guess ! End of program");
             guess = true;
             return true;
         }

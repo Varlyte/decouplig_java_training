@@ -8,11 +8,17 @@ public class HumanPlayer implements Player{
     Logger logger = LoggerFactory.getLogger("Player");
     @Override
     public long askNextGuess() {
-        return 0;
+        return scanner.nextLong();
     }
 
     @Override
     public void respond(boolean lowerOrGreater) {
-
+        if(!lowerOrGreater)
+        {
+            logger.log("plus petit ou plus grands");
+        }
+        else {
+            lowerOrGreater = true;
+        }
     }
 }

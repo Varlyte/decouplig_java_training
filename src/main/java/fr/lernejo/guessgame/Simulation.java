@@ -24,7 +24,7 @@ public class Simulation {
             logger.log("It's lower !");
         }
         else if(player.askNextGuess() < numberToGuess){
-            logger.log("It's greated !");
+            logger.log("It's great !");
         }
         else {
             logger.log("Good guess ! End of program");
